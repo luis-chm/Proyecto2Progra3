@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu.master.cs" Inherits="Proyecto2Progra3.Menu" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mi Proyecto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/CapaInterfaz/Principal/Principal.aspx">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/CapaInterfaz/Cliente/Cliente.aspx">Clientes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/CapaInterfaz/Producto/Producto.aspx">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/CapaInterfaz/Empleado/Empleado.aspx">Empleados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/CapaInterfaz/Categoria/Categoria.aspx">Categorías</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="/CapaInterfaz/Registro/Registro.aspx">Registro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/CapaInterfaz/CambiarPassword/CambiarContrasena.aspx">Cambiar Contraseña</a>
+                </li>
+                <!-- Agrega aquí más elementos de menú según tus necesidades -->
+            </ul>
+        </div>
+    </nav>
+    
+    <div>
+        Fecha y Hora Actual: <asp:Label ID="lblFechaHora" runat="server"></asp:Label><br />
+        Usuario Conectado: <asp:Label ID="lblUsuario" runat="server"></asp:Label>
+    </div>
+    
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- Bootstrap JS (Optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-OUHYJZRzPm3zjcjLlIbC5r3w2UnK99i5TbGrjHtMKfOzPeww0mkMjqv5g+zoY4/v" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shCk/7QYwuUp+wn8l3OksI1txj2Ktk8Q=="" crossorigin="anonymous"></script>
+</body>
+</html>
